@@ -1,0 +1,53 @@
+<html>
+    <title>Form</title>
+    
+    <body>
+
+<!-- FORM-3:- Radio button, Checkbox & Address -->   
+            <form name="myform2" action="" method="get" enctype="multipart/form-data">
+<!-- 'enctype=multipart/form-data' encode the file before send to server & read it, its compulsury to use when we add an "upload file option" in our website.                 -->
+               
+                <fieldset>  
+<!-- Fieldset create an border-box around the form                     -->
+                <legend>Registration Form</legend>
+<!-- Legend tag gives a Title caption to form                 -->
+				ID<input type="hidden" value="3">
+<!-- Above line  type value & 3 cant understand, watch it later                 -->
+                Name:<input type="text" name="fname" size="12" maxlength="13"><br>
+                Username:<input type="text" name="uname" size="12" maxlength="12"><br>
+                Password:<input type="password" name="pass" maxlength="4"><br>
+                Gender:<input type="radio" name="gender" value="male" checked="checked">Male
+                        <input type="radio" name="gender" value="female">Female <br>
+
+                Courses:
+                <input type="checkbox" name="check" value="PHP">PHP
+                <input type="checkbox" name="check" value="JAVA" checked="checked">JAVA
+                <input type="checkbox" name="check" value="Android">Android <br>
+
+                City:
+                <select name="MyCity" size="4" multiple>
+                    <option value="">Select</option>
+                    <optgroup label="Pune">
+                    <option value="Rani chauk">Rani chauk</option>
+                    <option value="Jaystambh chauk">Jaistambh chauk</option>
+                    <option value="Mahavir chauk">Mahavir chauk</option>
+                    </optgroup>
+                    <option value="Nagpur" selected="yes">Nagpur</option>
+                    <option value="Mumbai">Mumbai</option>
+                </select> <br> <br>
+
+                Address:<textarea name="addr" rows="8" cols="24" disabled="disabled">You can type here,(cant type--> Disabled property used here)</textarea> <br> <br>
+                <!-- we can apply size of box by row & col -->
+                <!-- After disabled property we can only read it not edii it, we can apply this property anywhere eg:- name, email, etc... -->
+
+                Upload Image:<input type="file" name="img"> <br> <br>
+
+                <button name="submit" type="submit">SignIn</button>
+                <button name="reset" type="reset">Cancel</button>
+                
+            </fieldset>
+
+        </form>
+        
+    </body>
+</html>

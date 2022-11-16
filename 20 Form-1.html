@@ -1,0 +1,72 @@
+<html>
+    <title>Form</title>
+    
+    <body>
+<!-- FORM-1:- Input & Button -->
+        <!-- <form name="myform" action="" method=""> -->
+            <!-- Name:<input type="text" name="fname" size="15" maxlength="13" value="name set"><br>
+            Username:<input type="text" name="uname" size="15" maxlength="12"><br>
+            Password:<input type="password" name="pass" maxlength="4"><br>
+            <input type="submit" name="sub" value="Log-in">
+            <input type="reset" name="Reset" value="Cancel">
+            <input type="button" name="simple button" value="Log-in"> -->
+            <!-- simple button do nothing here, learn it later with javascript -->
+
+            <!-- <button name="submit" type="submit">Sign-In</button> -->
+            <!-- Data submit here -->
+            <!-- <button name="reset" type="reset">Cancel</button> -->
+            <!-- button is same as input attribute -->
+            <!-- </form> -->
+            <hr size="3" color="red">
+
+<!-- FORM-2:- Post & Get for method -->            
+            <!-- <form name="myform2" action="" method="post"> -->
+                <!-- method=post means it didnt show data on URL {get value is set default} -->
+                <!-- Name:<input type="text" name="fname" size="12" maxlength="13"><br>
+                Username:<input type="text" name="uname" size="12" maxlength="12"><br>
+                Password:<input type="password" name="pass" maxlength="4"><br>
+                
+                <button name="submit" type="submit">SignIn</button>
+                <button name="reset" type="reset">Cancel</button> -->
+
+<!-- FORM-3:- Radio button & Checkbox -->   
+            <form name="myform2" action="" method="get">
+                Name:<input type="text" name="fname" size="12" maxlength="13"><br>
+                Username:<input type="text" name="uname" size="12" maxlength="12"><br>
+                Password:<input type="password" name="pass" maxlength="4"><br>
+                Gender:<input type="radio" name="gender" value="male" checked="checked">Male
+                <!-- checked means it default set a point on male button -->
+                        <input type="radio" name="gender" value="female">Female <br>
+
+                Courses:
+                <input type="checkbox" name="check" value="PHP">PHP
+                <input type="checkbox" name="check" value="JAVA" checked="checked">JAVA
+                <!-- java checkmake default -->
+                <input type="checkbox" name="check" value="Android">Android <br>
+
+                City:
+                <select name="MyCity" size="4" multiple>
+            <!-- By applying size we can show atleast 2 items in dropdown menu as we value to it         -->
+            <!-- after applying multiple we can select multiple cities -->
+                    <option value="">Select</option>
+            <!-- if above select is not written, then it will take 1st option as default         -->
+                    <optgroup label="Pune">
+                    <option value="Rani chauk">Rani chauk</option>
+                    <option value="Jaystambh chauk">Jaistambh chauk</option>
+                    <option value="Mahavir chauk">Mahavir chauk</option>
+            <!-- These are like sub options(area inside pune) in pune, after applying optgoup main option will note be select of it eg:-pune -->
+                    </optgroup>
+                    <option value="Nagpur" selected="yes">Nagpur</option>
+            <!-- Nagpur will be shown default even after we disable size of dropdown menu         -->
+                    <option value="Mumbai">Mumbai</option>
+                </select>
+
+                <button name="submit" type="submit">SignIn</button>
+                <button name="reset" type="reset">Cancel</button>
+                
+
+
+        </form>
+        
+    </body>
+</html>

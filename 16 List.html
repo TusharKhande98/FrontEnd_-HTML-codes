@@ -1,0 +1,142 @@
+<HTML>
+    <BOdy>
+        <h2>Unordered List:-</h2>
+        <ul>
+            <!-- defaultype is dark circle -->
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+       
+        <ul type="circle">
+            <!-- type changed to holed circle -->
+            <li>Contact</li>
+            <li>Produc</li>
+        </ul>
+       
+        <ul type="none">
+            <!-- type changed to none -->
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+
+        <ul type="square">
+            <!-- type changed to square -->
+            <li>Contact</li>
+            <li>Produc</li>
+        </ul>
+
+        <h2>Orderd List:-</h2>            
+        <ol>
+            <!-- No. 1,2,3 set to default list -->
+            <li>HTML</li>
+            <li>CSS</li>
+        </ol>
+
+        <ol type="a">
+            <!-- type changed to a,b,c -->
+            <li>HTML</li>
+            <li>CSS</li>
+        </ol>
+        
+        <ol type="A">
+            <!-- type changed to A,B,C -->
+            <li>HTML</li>
+            <li>CSS</li>
+        </ol>
+        
+        <ol type="I">
+            <!-- type changed to I,II,III -->
+            <li>HTML</li>
+            <li>CSS</li>
+        </ol>
+    <h2>Used an attribute of 'start':-</h2>
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+        </ol>
+        <p><b><i>Below list is not start from 1, it wil resume from a no. that we assigned in start="_"</i></b></p>
+        
+        <ol start="3">
+            <li>HTML</li>
+            <li>CSS</li>
+        </ol>
+
+        <h3>How to resume no./alphabet/roman series using start & type attribute:-</h3>
+        <!-- resume with alphabet now linke above no. -->
+        <ol type="a">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+        </ol>
+        <p><b><i>Below list is resume from 'd', But we need to assign start value in numeric & also mention a type='a'.</i></b></p>
+        
+        <ol start="4" type="a">
+            <li>HTML</li>
+            <li>CSS</li>
+        </ol>
+
+        <h2>Reversed Order:-(Descending format)</h2>
+
+        <ol reversed>
+            <!-- list get reversed numbering -->
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+            <li>JAVA</li>
+        </ol>
+
+        <h2>Value attribute:-(we can change value of list)</h2>        
+        <ol reversed>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li value="11">JS</li>
+            <!-- we changed value here by applying this property to 'li' -->
+            <li>JAVA</li>
+        </ol>
+
+        <h2>Definition List:-(It will be arrange in dictionary form---> {word: meaning})</h2>
+        <dl>
+            <dt>Website:-</dt>
+            <dd>Website is a collection of webpages.</dd>
+            <dt>Table:-</dt>
+            <dd>table is a combination of rows & colomn.</dd>
+        </dl>
+
+        <h2>Nesting List:-(list inside list)</h2>
+        <ul type="square">
+            <li>Web design
+                <ul>
+                    <li>HTML
+                        <ul type="square">
+                            <li>Form</li>
+                            <li>Table</li>
+                            <li>List</li>
+                        </ul>
+                    </li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </li>
+            <li>Graphics design</li>
+            <li>JAVA</li>
+        </ul>
+        <h3>Nesting with ordered list:-</h3>
+        <ol>
+            <li>Full stack
+                <ol>
+                    <li>Client</li>
+                    <li>Server</li>
+                    <li>API</li>
+                </ol>
+            </li>
+            <li>FrontEnd
+                <ul>
+                    <li>HTML</li>
+                    <li>Bootstrap</li>
+                </ul>
+            </li>
+        </ol>
+        <!-- default sign in unordered list will change in list then in sublist & again in their sublist -->
+
+    </BOdy>
+</HTML>

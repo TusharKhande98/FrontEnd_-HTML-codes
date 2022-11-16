@@ -1,0 +1,49 @@
+<!-- RUN ONLY 1 PART WITHOUT MESSED UP -->
+
+<html>
+<!-- PART-1 OF FRAME-SET -->    
+    <!--Cmt- Devide window in row 2 parts  -->
+    <!-- <frameset rows="25%,50%,25%" frameborder="1"> -->
+        <!--Cmt- After frameborder=0 border will not displayed -->
+            <!-- <frame src="3 Heading Tag.html" noresize="noresize"> -->
+        <!--Cmt- After 'noresize' border will not moved by user         -->
+            <!-- <frame src="16 List.html" scrolling="no"> -->
+        <!--Cmt- Not able to scroll after giving property         -->
+            <!-- <frame src="6 HR tag.html"> -->
+    <!-- </frameset> -->
+
+
+<!-- PART-2 OF FRAME-SET -->
+        <!-- <frameset cols="300,300" frameborder="1">  -->
+            <!--Cmt- We can also divide window in pixel as above -->
+        <!-- <frameset cols="250,*" frameborder="1"> -->
+        <!--Cmt- We can divide window 250px & remaining is covered automatically by '*' as above line -->
+            <!-- <frame src="3 Heading Tag.html">
+            <frame src="16 List.html">
+        </frameset> -->
+    
+
+<!-- PART-3 OF FRAME-SET -->
+
+        <!-- <frameset rows="30%,70%" frameborder="1"> 
+            <frame src="3 Heading Tag.html"> -->
+        <!--Cmt- Here we divide below row in 2 colomns         -->
+                <!-- <frameset cols="35%,65%">
+                    <frame src="16 List.html">
+                    <frame src="kung fu panda 3.jpg">
+                </frameset>
+        </frameset>
+         -->
+        
+<!-- PART-4 OF FRAME-SET -->
+        <frameset cols="300,*" frameborder="1"> 
+            <frame src="example for frame - name tag.html" name="Anchor">
+        <!-- Above line code is very tricky to understand see it carefully           -->
+        <!-- We set target to another page that will open in 2nd colomn, cauz we set it -->
+            <frame src="13 Image.html" name="Image">
+        <!-- Practise it with maximum frame quantity in window -->
+
+        </frameset>
+
+
+</html>
